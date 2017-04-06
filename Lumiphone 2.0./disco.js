@@ -32,7 +32,7 @@ function Disco() {
   //internas
   this.updateAngle = function() {
     this.angle = this.angle + 1;
-    //if(angle == 2*PI)angle = 0;
+    if(this.angle == 360)this.angle = 0;
     console.log ("updateAngle = " + this.angle);
   }
 
